@@ -1,4 +1,4 @@
-package com.invasionofsmallcubes
+package com.invasionofsmallcubes.divisible
 
 class DivisibleByFiveAndThree(n: Int) : Divisible {
 

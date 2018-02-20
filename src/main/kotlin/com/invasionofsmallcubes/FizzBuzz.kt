@@ -1,12 +1,13 @@
 package com.invasionofsmallcubes
 
+import com.invasionofsmallcubes.divisible.*
+
 class FizzBuzz {
     fun evaluate(numbers: List<Int>): List<String>? {
         return numbers
-                .map { n -> if(DivisibleByFive(n).divisible() && DivisibleByThree(n).divisible()) DivisibleByFiveAndThree(n).value()
-                else if (DivisibleByThree(n).divisible()) DivisibleByThree(n).value()
-                else if (DivisibleByFive(n).divisible()) DivisibleByFive(n).value()
-                else DivisibleDefault(n).value() }
+                .map { n ->
+                    DivisibleFactory.createChain(n)
+                            .first { div -> div.divisible() }.value()
+                }
     }
-
 }

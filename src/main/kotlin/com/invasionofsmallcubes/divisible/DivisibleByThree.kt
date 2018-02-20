@@ -1,4 +1,4 @@
-package com.invasionofsmallcubes
+package com.invasionofsmallcubes.divisible
 
 class DivisibleByThree(private val n: Int) : Divisible {
     override fun value(): String = "Fizz"

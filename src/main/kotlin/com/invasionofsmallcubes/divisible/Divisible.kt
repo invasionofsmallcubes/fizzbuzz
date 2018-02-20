@@ -1,4 +1,4 @@
-package com.invasionofsmallcubes
+package com.invasionofsmallcubes.divisible
 
 interface Divisible {
     fun divisible(): Boolean

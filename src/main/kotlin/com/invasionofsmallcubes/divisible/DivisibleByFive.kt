@@ -1,4 +1,4 @@
-package com.invasionofsmallcubes
+package com.invasionofsmallcubes.divisible
 
 class DivisibleByFive(private val n: Int) : Divisible {
     override fun divisible() = n % 5 == 0
