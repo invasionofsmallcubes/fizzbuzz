@@ -3,9 +3,9 @@ FizzBuzz kata - [source](http://codingdojo.org/kata/FizzBuzz/)
 TODO LIST:
 
 ~if a **number** is not divisible by 3 or 5, it just print itself~
-if a **number** is divisible by 3 then it prints "Fizz"
-if a **number** is divisble by 5 then it prints "Buzz"
-if a **number** is divisible by 3 *and* 5 then it prints "FizzBuzz" 
+~if a **number** is divisible by 3 then it prints "Fizz"~
+~if a **number** is divisble by 5 then it prints "Buzz"~
+~if a **number** is divisible by 3 *and* 5 then it prints "FizzBuzz"~
 
 AC:
 
