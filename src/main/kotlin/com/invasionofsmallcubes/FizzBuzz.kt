@@ -3,13 +3,10 @@ package com.invasionofsmallcubes
 class FizzBuzz {
     fun evaluate(numbers: List<Int>): List<String>? {
         return numbers
-                .map { n -> if(divisibleByFive(n) && divisibleByThree(n)) "FizzBuzz"
-                else if (divisibleByThree(n)) "Fizz"
-                else if (divisibleByFive(n)) "Buzz"
-                else n.toString() }
+                .map { n -> if(DivisibleByFive(n).divisible() && DivisibleByThree(n).divisible()) DivisibleByFiveAndThree(n).value()
+                else if (DivisibleByThree(n).divisible()) DivisibleByThree(n).value()
+                else if (DivisibleByFive(n).divisible()) DivisibleByFive(n).value()
+                else DivisibleDefault(n).value() }
     }
 
-    private fun divisibleByFive(n: Int) = n % 5 == 0
-
-    private fun divisibleByThree(n: Int) = n % 3 == 0
 }
